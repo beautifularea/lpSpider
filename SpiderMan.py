@@ -47,15 +47,7 @@ class MongoDemo(object):
 
 
 if __name__ == '__main__':
-    # spider_man = SpiderMan()
-    # spider_man.crawl("http://baike.baidu.com/view/284853.htm")
-    MG = MongoDemo()
-    dtbs = MG.createDB()
-    col = MG.createCollection(dtbs)
-    print 'ok'
-    post = {"author": "Mike"}
-    col.insert_one(post)
-    print 'hello world'
-    # print col.find_one()
+    spider_man = SpiderMan()
+    spider_man.crawl("http://baike.baidu.com/view/284853.htm")
 
     
